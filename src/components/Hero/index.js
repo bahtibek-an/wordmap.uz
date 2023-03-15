@@ -49,7 +49,7 @@ const Hero = () => {
   // }
 
   return (
-    <div className='hero'>
+    <div className='hero' id="home">
       <div className='_container'>
         <div className='text-container'>
           {/* <span><h1>Words<br />Connecting<br />Maps</h1></span> */}

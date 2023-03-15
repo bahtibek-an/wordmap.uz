@@ -10,7 +10,7 @@
 }
 
 .card .paragraph-container {
-    height: 80%;
+    height: 50%;
     justify-content: center;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .card .heading-container {
-    padding: 20px 30px 30px;
+    padding: 20px 30px 0px;
 }
 
 .card .heading-container h2 {

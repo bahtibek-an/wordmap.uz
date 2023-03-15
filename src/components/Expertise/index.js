@@ -16,7 +16,7 @@ import Utility from '../../assets/expertise/Utilities.png'
 
 const Expertise = () => {
   return (
-    <div className='expertise'>
+    <div className='expertise' id="expertise">
       <h2 className='title'>Our Expertise</h2>
       <div className='expertises'>
         <Card

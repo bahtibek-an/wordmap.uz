@@ -46,7 +46,7 @@ const Data = [
 
 const Services = () => {
     return (
-        <div className='services'>
+        <div className='services' id="services">
             <h2 className='title'>Our Services</h2>
             <div className='container'>
             <Carousel breakPoints={breakPoints}>
