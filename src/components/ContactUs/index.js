@@ -11,6 +11,17 @@ const ContactUs = () => {
     });
 
     const { name, email, client, language, translation, description } = formData;
+    const token = "6186746548:AAFhqwYsRwAFoKvYJvqXTVwqPhx9d3DXw6s";
+    const chat_id = "-960297993";
+
+    const txt = JSON.stringify(
+        `<b>First Name:</b> ${name}%0A 
+                <b>Email:</b> ${email}%0A 
+                <b>Language Pair:</b> ${language}%0A 
+                <b>Client Type:</b> ${client}%0A
+                <b>Translation Type:</b> ${translation}%0A
+                <b>Message:</b> ${description}%0A`
+    ).split('"')[1];
 
     const onChange = (e) => {
         setFormData((prevState) => ({
@@ -21,16 +32,21 @@ const ContactUs = () => {
 
     const onSubmit = async (e) => {
         e.preventDefault()
-        console.log("formData", formData)
+        const data = await fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&parse_mode=html&text=${txt}`, {
+            method: "POST",
+            data: txt
+        });
 
-        const requestOptions = {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(formData)
-        };
-
-        fetch(process.env.BACKEND_URL + 'send-email', requestOptions)
-            .then(response => response.json())
+        // console.log("formData", formData)
+        //
+        // const requestOptions = {
+        //     method: 'POST',
+        //     headers: { 'Content-Type': 'application/json' },
+        //     body: JSON.stringify(formData)
+        // };
+        //
+        // fetch(process.env.BACKEND_URL + 'send-email', requestOptions)
+        //     .then(response => response.json())
 
         // const loggedInResponse = await post("http://localhost:5000/send-email", {
         //   method: "POST",
@@ -50,7 +66,7 @@ const ContactUs = () => {
             <h1 className="title">Contact Us</h1>
             <div className="__container">
                 <div className='form-container'>
-                    <div className='information'>
+                    <div className='_information'>
                         <form onSubmit={onSubmit}>
                             <label>Full Name:</label>
                             <input

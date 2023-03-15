@@ -28,6 +28,7 @@ const Information = () => {
                 {
                     Data.map((item) => (
                         <Card
+                            key={item.id}
                             paragraph={item.paragraph}
                             heading={item.heading}
                         />

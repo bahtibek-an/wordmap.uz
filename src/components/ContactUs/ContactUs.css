@@ -3,8 +3,9 @@
 .__container {
     max-width: 1080px;
     margin: auto;
-    /*display: flex;*/
-    /*align-items: center;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /*flex-wrap: wrap;*/
     padding: 1rem;
 }
@@ -48,7 +49,14 @@
     /*align-self: flex-end;*/
 }
 
-.form-container .information form label,
+.form-container {
+    width: 700px;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 6px 20px rgb(56 125 255 / 17%);
+}
+
+.form-container ._information form label,
 form input, form select, form textarea {
     display: block;
     /* //margin-bottom: 10px; */
@@ -56,12 +64,14 @@ form input, form select, form textarea {
     align-self: center;
 }
 
-.form-container .information form label {
+
+
+.form-container ._information form label {
     font-size: 14px;
     margin-top: 10px;
 }
 
-.form-container .information form input, form select, form textarea {
+.form-container ._information form input, form select, form textarea {
     padding: 5px;
     border: solid 1px #BDC7D8;
     margin-top: 5px;
@@ -71,11 +81,15 @@ form input, form select, form textarea {
     -moz-appearance:none;
 }
 
-.form-container .information form select {
+.form-container ._information form select {
     height: 45px;
 }
 
-.form-container .information .button {
+.form-container ._information form textarea {
+    resize: vertical;
+}
+
+.form-container ._information .button {
     background-color: #00BFFF;
     cursor: pointer;
     font-weight: bold;
@@ -86,6 +100,6 @@ form input, form select, form textarea {
     font-size: 16px;
 }
 
-.form-container .information .button:hover {
+.form-container ._information .button:hover {
     background-color: #0044ff;
 }

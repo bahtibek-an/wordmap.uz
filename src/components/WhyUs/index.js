@@ -16,14 +16,14 @@ const WhyUs = () => {
                     </div>
                 </div>
                 <div className='info-container'>
-                    <div class="info">
+                    <div className="info">
                         <FaHourglassStart color='#00bdfe' size={20}/>
                         <h2>Our Strategy</h2>
                         <p>А WORDMAP translation agency patiently and carefully
                             selects professional translators.
                         </p>
                     </div>
-                    <div class="info">
+                    <div className="info">
                         <FaFlag color='#00bdfe' size={20}/>
                         <h2>Our Tactics</h2>
                         <p>
@@ -31,14 +31,14 @@ const WhyUs = () => {
                             satisfaction.
                         </p>
                     </div>
-                    <div class="info">
+                    <div className="info">
                         <GiStairsGoal color='#00bdfe' size={20}/>
                         <h2>Our Goals</h2>
                         <p>
                             High quality translation for our partners.
                         </p>
                     </div>  
-                    <div class="info">
+                    <div className="info">
                         <FaLock color='#00bdfe' size={20}/>
                         <h2>Our Confidentiality</h2>
                         <p>

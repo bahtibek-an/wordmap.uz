@@ -52,6 +52,7 @@ const Services = () => {
             <Carousel breakPoints={breakPoints}>
                 {Data.map((item, index) => (
                     <Card
+                        key={item.id}
                         id={item.id}
                         name={item.name}
                         info={item.info}
