@@ -104,4 +104,14 @@
         margin-bottom: 20px;
     }
 
+    .info > h2 {
+        font-size: 20px;
+    }
+
+    .info > svg {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 5px;
+    }
+
 }
