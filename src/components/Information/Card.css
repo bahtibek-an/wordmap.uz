@@ -1,0 +1,34 @@
+.card {
+    display: flex;
+    flex-flow: column;
+    height: 250px;
+    width: 100%;
+    background-color: #fff;
+    margin: 10px 15px;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    border-radius: 10px;
+}
+
+.card .paragraph-container {
+    height: 80%;
+    justify-content: center;
+}
+
+.card .paragraph-container p {
+    align-self: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top:10%;
+}
+
+.card .heading-container {
+    padding: 20px 30px 30px;
+}
+
+.card .heading-container h2 {
+    color: #252e48;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 1.3px;
+}
