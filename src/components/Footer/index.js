@@ -20,7 +20,7 @@ const Footer = () => {
                     {/* <h3>Company</h3> */}
                     <span><FaPhoneAlt className='icon' size={20}/><p><a href="tel:+998909380911">+998(90) 938-09-11</a></p></span>
                     
-                    <span><FaGlobe className='icon' size={20}/><p><a target="_blank" href="http://www.wordmap.uz/">www.wordmap.uz</a></p></span>
+                    {/* <span><FaGlobe className='icon' size={20}/><p><a target="_blank" href="http://www.wordmap.uz/">www.wordmap.uz</a></p></span> */}
                     
                     <span><MdEmail className='icon' size={20}/><p>info@wordmap.uz, biz.dep@wordmap.uz</p></span>
                     <span><FaMapMarkerAlt className='icon' size={20}/><p>56, M.Ulugbek str., M.Ulugbek district, Tashkent city, 100007, Uzbekistan</p></span>

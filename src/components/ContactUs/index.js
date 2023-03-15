@@ -10,6 +10,8 @@ const ContactUs = () => {
         description: ''
     });
 
+    const [ success, setSuccess ] = useState(false);
+
     const { name, email, client, language, translation, description } = formData;
     const token = "6217576643:AAGnZNEtdZGjpHKM4b9-Lt6RUbwDLfd37Pk";
     const chat_id = "-960297993";
@@ -31,7 +33,7 @@ const ContactUs = () => {
             method: "POST",
             data: txt
         });
-
+        setSuccess(true);
         // console.log("formData", formData)
         //
         // const requestOptions = {
@@ -63,12 +65,18 @@ const ContactUs = () => {
                 <div className='form-container'>
                     <div className='_information'>
                         <form onSubmit={onSubmit}>
+                            {success && (
+                                <div className='alert-info'>
+                                    Success sended
+                                </div>
+                            )}
                             <label>Full Name:</label>
                             <input
                                 type='text'
                                 id='name'
                                 name='name'
                                 value={name}
+                                required
                                 onChange={onChange} />
                             <label>Client Type:</label>
                             <select value={client} onChange={onChange}>
@@ -77,6 +85,7 @@ const ContactUs = () => {
                             </select>
                             <label>Email Address:</label>
                             <input
+                                required
                                 type='email'
                                 id='email'
                                 name='email'
@@ -85,6 +94,7 @@ const ContactUs = () => {
                             />
                             <label>Language Pair:</label>
                             <input
+                                required
                                 type='text'
                                 id='language'
                                 name='language'
@@ -98,6 +108,7 @@ const ContactUs = () => {
                             </select>
                             <label>Project Decription:</label>
                             <textarea
+                                required
                                 type='text'
                                 id='description'
                                 name='description'
@@ -105,7 +116,12 @@ const ContactUs = () => {
                                 onChange={onChange}
                                 rows={5}
                             />
-                            <input type="submit" className="button" value="Submit" />
+                            <input 
+                                type="submit" 
+                                className="button" 
+                                value="Submit" 
+                                disabled={success}
+                            />
                         </form>
                     </div>
                 </div>
