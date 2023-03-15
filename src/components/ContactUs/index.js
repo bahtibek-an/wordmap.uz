@@ -11,16 +11,11 @@ const ContactUs = () => {
     });
 
     const { name, email, client, language, translation, description } = formData;
-    const token = "6186746548:AAFhqwYsRwAFoKvYJvqXTVwqPhx9d3DXw6s";
+    const token = "6217576643:AAGnZNEtdZGjpHKM4b9-Lt6RUbwDLfd37Pk";
     const chat_id = "-960297993";
 
     const txt = JSON.stringify(
-        `<b>First Name:</b> ${name}%0A 
-                <b>Email:</b> ${email}%0A 
-                <b>Language Pair:</b> ${language}%0A 
-                <b>Client Type:</b> ${client}%0A
-                <b>Translation Type:</b> ${translation}%0A
-                <b>Message:</b> ${description}%0A`
+        `<b>First Name:</b> ${name}%0A<b>Email:</b> ${email}%0A<b>Language Pair:</b> ${language}%0A<b>Client Type:</b> ${client}%0A<b>Translation Type:</b> ${translation}%0A<b>Message:</b> ${description}%0A`
     ).split('"')[1];
 
     const onChange = (e) => {
