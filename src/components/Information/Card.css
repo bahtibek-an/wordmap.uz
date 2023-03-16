@@ -16,7 +16,7 @@
 
 .card .paragraph-container p {
     align-self: center;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     margin-top:10%;
 }
@@ -27,7 +27,7 @@
 
 .card .heading-container h2 {
     color: #252e48;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 24px;
     text-align: center;
     letter-spacing: 1.3px;

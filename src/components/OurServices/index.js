@@ -45,11 +45,31 @@ const Data = [
 ]
 
 const Services = () => {
+    const carouselRef = React.useRef(null);
+    const onNextStart = (currentItem, nextItem) => {
+        if (currentItem.index === nextItem.index) {
+            // we hit the last item, go to first item
+            carouselRef.current.goTo(0);
+        }
+    };
+    const onPrevStart = (currentItem, nextItem) => {
+        if (currentItem.index === nextItem.index) {
+            // we hit the first item, go to last item
+            carouselRef.current.goTo(Data.length);
+        }
+    };
+
     return (
         <div className='services' id="services">
             <h2 className='title'>Our Services</h2>
             <div className='container'>
-            <Carousel breakPoints={breakPoints}>
+            <Carousel
+                breakPoints={breakPoints}
+                ref={carouselRef}
+                onPrevStart={onPrevStart}
+                onNextStart={onNextStart}
+                disableArrowsOnEnd={false}
+            >
                 {Data.map((item, index) => (
                     <Card
                         key={item.id}

@@ -23,7 +23,7 @@ const Data = [
 const Information = () => {
     return (
         <div className='information'>
-            <h2 className='title'>Confidentiality and Information Security</h2>
+            {/*<h2 className='title'>Confidentiality and Information Security</h2>*/}
             <div className='container'>
                 {
                     Data.map((item) => (

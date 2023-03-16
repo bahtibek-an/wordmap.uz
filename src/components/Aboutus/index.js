@@ -13,12 +13,9 @@ const Aboutus = () => {
                     <img src={AboutUs} alt="About us"/>
                 </div>
                 <div className='text-container'>
-                    <h2>Distinctive features of technical texts are complexity with field-specific
-                        terminology and sentence structure unordinary for a language speaker.<br/><br/>
-                        Not every native speaker can sort them out. When dealing with such
-                        materials, a translator is required to have a perfect knowledge of the
-                        two languages and, of course, a knowledge in the field of the described
-                        realities. That is, one must have both linguistic and technical education.
+                    <h2>WORDMAP is committed to providing the finest translation services to your esteemed company in a professional and timely manner.<br/>
+                        We work with clients to assess their translation needs and customize the best solution for them. Our pool of linguists consists of more than 30 professionals who specialize in different industries.<br/>
+                        We respect the valuable time of our clients and emphasize the creation of a translation plan that has a minimal impact on a company’s daily operations.
                     </h2>
                 </div>
             </div>

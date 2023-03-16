@@ -16,10 +16,11 @@ const SuccessModal = ({ close }) => {
         <div id="myModal" className={style.modal}>
             <div className={style.modalContent}>
                 <div className={style.modalItem}>
-                    <div className={style.close} onClick={close}>
-                        <span >&times;</span>
+                    <div className={style.title}>
+                        <h3>Success sent</h3>
+                        <span className={style.close} onClick={close}>&times;</span>
                     </div>
-                    <p className={style.modalText}>Success Send</p>
+                    <p className={style.modalText}>Thanks for your enquiry!</p>
                 </div>
             </div>
         </div>

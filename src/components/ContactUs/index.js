@@ -62,12 +62,25 @@ const ContactUs = () => {
     return (
         <div className="contact-us" id="contact">
             <h1 className="title">Contact Us</h1>
+            <div className="description">
+                <p>Please complete the form below if you would like to order translation; we will respond to you within 24 hours!</p>
+            </div>
             <div className="__container">
                 <div className='form-container'>
                     <div className='_information'>
                         <form onSubmit={onSubmit}>
                             {success && <SuccessModal
-                                close={() => setSuccess(false)}
+                                close={() => {
+                                    setSuccess(false);
+                                    setFormData({
+                                        name: '',
+                                        email: '',
+                                        client: 'Individual',
+                                        language: '',
+                                        translation: 'Written',
+                                        description: ''
+                                    })
+                                }}
                             />}
                             <label>Full Name:</label>
                             <input
