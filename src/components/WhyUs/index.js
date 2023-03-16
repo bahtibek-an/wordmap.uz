@@ -20,7 +20,7 @@ const WhyUs = () => {
                     <div className="info">
                         <FaHourglassStart color='#00bdfe' size={20}/>
                         <h2>Our Strategy</h2>
-                        <p>А WORDMAP translation agency patiently and carefully
+                        <p>WORDMAP translation agency patiently and carefully
                             selects professional translators.
                         </p>
                     </div>
