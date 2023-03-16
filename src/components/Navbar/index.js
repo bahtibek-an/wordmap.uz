@@ -4,11 +4,14 @@ import Logo from '../../assets/logo.png'
 
 import { HiOutlineMenuAlt4 } from 'react-icons/hi'
 import { FaRegTimesCircle } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
 
     const handleClick = () => setClick(!click)
+
+    const scrollToTop = () => window.scrollTo(0, 0);
 
     return (
         <div className='navbar'>
@@ -33,7 +36,9 @@ const Navbar = () => {
                 </button>
                 <div className={click ? 'nav-menu active' : 'nav-menu'}>
                     <ul>
-                        <li><a href="#home">Home</a></li>
+                        <li>
+                            <Link onClick={scrollToTop} to="">Home</Link>
+                        </li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#expertise">Expertise</a></li>
