@@ -12,7 +12,7 @@ const WhyUs = () => {
                 <div className='window-container'>
                     <div className='window'>
                         <h1>15+</h1>
-                        <h4>Team of professional translators with 15+ years of Experience</h4>
+                        <h4>Team of professional translators with years of Experience</h4>
                     </div>
                 </div>
                 <div className='info-container'>
