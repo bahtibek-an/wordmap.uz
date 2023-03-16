@@ -8,6 +8,8 @@
 }
 
 .navbar ._container {
+  max-width: 1080px;
+  margin: auto;
   height: 100%;
   display: flex;
   justify-content: space-between;
