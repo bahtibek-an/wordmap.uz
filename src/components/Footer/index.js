@@ -1,10 +1,6 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './Footer.css'
-
 import Logo from '../../assets/logo.png'
-import Button from '../Button/Button';
-
-import { Link } from 'react-router-dom'
 import {FaPhoneAlt, FaGlobe, FaMapMarkerAlt} from 'react-icons/fa'
 import {MdEmail} from 'react-icons/md'
 
@@ -16,7 +12,7 @@ const Footer = () => {
                 <div className='col'>
                     <img src={Logo}/>
                 </div>
-                <div className='col-2'>
+                <div className='_col-2'>
                     {/* <h3>Company</h3> */}
                     <span><FaPhoneAlt className='icon' size={20}/><p><a href="tel:+998909380911">+998(90) 938-09-11</a></p></span>
                     

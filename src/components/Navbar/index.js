@@ -37,12 +37,15 @@ const Navbar = () => {
                 <div className={click ? 'nav-menu active' : 'nav-menu'}>
                     <ul>
                         <li>
-                            <Link onClick={scrollToTop} to="">Home</Link>
+                            <Link onClick={() => {
+                                setClick(false);
+                                scrollToTop();
+                            }} to="">Home</Link>
                         </li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#expertise">Expertise</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a onClick={handleClick} href="#about">About</a></li>
+                        <li><a onClick={handleClick} href="#services">Services</a></li>
+                        <li><a onClick={handleClick} href="#expertise">Expertise</a></li>
+                        <li><a onClick={handleClick} href="#contact">Contact</a></li>
                     </ul>
                 </div>
 

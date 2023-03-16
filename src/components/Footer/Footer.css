@@ -18,8 +18,8 @@
     flex: 1;
 }
 
-.footer .col-2 {
-    margin: 0 50px;
+.footer ._col-2 {
+    /* margin: 0 50px; */
     text-align: left;
     flex: 3;
 }
@@ -28,7 +28,7 @@
     max-width: 300px;
 }
 
-.footer .col-2 span {
+.footer ._col-2 span {
     display: flex;
     align-items: center;
 }
