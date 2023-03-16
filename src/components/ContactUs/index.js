@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import "./ContactUs.css";
+import SuccessModal from "./component/SuccessModal";
 const ContactUs = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -65,11 +66,9 @@ const ContactUs = () => {
                 <div className='form-container'>
                     <div className='_information'>
                         <form onSubmit={onSubmit}>
-                            {success && (
-                                <div className='alert-info'>
-                                    Success sended
-                                </div>
-                            )}
+                            {success && <SuccessModal
+                                close={() => setSuccess(false)}
+                            />}
                             <label>Full Name:</label>
                             <input
                                 type='text'
@@ -79,7 +78,7 @@ const ContactUs = () => {
                                 required
                                 onChange={onChange} />
                             <label>Client Type:</label>
-                            <select value={client} onChange={onChange}>
+                            <select name="client" value={client} onChange={onChange}>
                                 <option value="Individual">Individual</option>
                                 <option value="Corporate">Corporate</option>
                             </select>
@@ -102,7 +101,7 @@ const ContactUs = () => {
                                 onChange={onChange}
                             />
                             <label>Translation Type:</label>
-                            <select value={translation} onChange={onChange}>
+                            <select name="translation" value={translation} onChange={onChange}>
                                 <option value="Written">Written</option>
                                 <option value="Verbal">Verbal</option>
                             </select>

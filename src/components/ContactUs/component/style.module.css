@@ -1,0 +1,49 @@
+
+.modal {
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modalContent {
+    width: 100%;
+    height: 100%;
+    /*background-color: #fefefe;*/
+    /*margin: 15% auto; !* 15% from the top and centered *!*/
+    /*padding: 20px;*/
+    /*border: 1px solid #888;*/
+    /*width: 80%; !* Could be more or less, depending on screen size *!*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalItem {
+    box-shadow: 0 6px 20px rgb(56 125 255 / 17%);
+    border-radius: 5px;
+    background: white;
+    /*padding: 20px 50px;*/
+}
+
+.close {
+    display: flex;
+    border-bottom: 1px solid #cccccc;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.close > span {
+    padding: 10px 20px;
+}
+
+
+.modalText {
+    padding: 20px 50px;
+}
+

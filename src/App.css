@@ -1,3 +1,8 @@
 html {
     scroll-behavior: smooth;
 }
+
+.remove-scrollbar {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
