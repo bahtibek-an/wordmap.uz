@@ -15,7 +15,7 @@ const Navbar = () => {
             <div className='container'>
                 <span>
                     <img src={Logo} />
-                    {/* <h2 className='first'>Word<h2 className='second'>Map</h2></h2> */}
+                    <h2 className='first'>Word<h2 className='second'>Map</h2></h2>
                 </span>
                 <button className='hamburger' onClick={() => { setClick(!click) }}>
                     <svg
