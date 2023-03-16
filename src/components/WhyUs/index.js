@@ -11,8 +11,8 @@ const WhyUs = () => {
             <div className='container'>
                 <div className='window-container'>
                     <div className='window'>
-                        <h1>10</h1>
-                        <h4>Years of Experience in Industry</h4>
+                        <h1>15+</h1>
+                        <h4>Team of professional translators with 15+ years of Experience</h4>
                     </div>
                 </div>
                 <div className='info-container'>
