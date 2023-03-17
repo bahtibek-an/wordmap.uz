@@ -15,7 +15,7 @@ const Data = [
     },
     {
         id: 3,
-        paragraph: "Order a translation from us, and we will fulfill the order at short notice..",
+        paragraph: "Order a translation from us, and we will fulfill the order at short notice.",
         heading: "Promptness"
     },
 ]

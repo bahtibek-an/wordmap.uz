@@ -54,7 +54,7 @@ const Hero = () => {
         <div className='text-container'>
           {/* <span><h1>Words<br />Connecting<br />Maps</h1></span> */}
           <h1>The Ultimate Translation Platform for Your Business</h1>
-          <p>Find the best transalator for your business</p>
+          <p>Find the best translator for your business</p>
         </div>
       </div>
     </div>
